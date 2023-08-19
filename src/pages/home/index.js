@@ -1,9 +1,8 @@
 import React from "react";
-import AppButton from "../../components/button";
 import styles from "./styles.module.css";
 import AppHeading from "../../components/heading-tile";
 import AboutMe from "../../components/about-me";
-import AppLogoCompany from "@/components/logo-company";
+import AppLogoCompany from "../../components/logo-company";
 import ContentCard from "../../components/content-card";
 import { Testimonials } from "../../components/testimonials";
 import { Education } from "../../components/education";
