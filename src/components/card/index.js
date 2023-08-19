@@ -26,7 +26,7 @@ const AppCard = ({ dataCard }) => {
           alignItems: "center",
         }}
       >
-        <Grid item xs={6}>
+        <Grid item xs={7}>
           {dataCard?.title_other != null ? (
             <Box className={styles.title}>{dataCard?.title_other}</Box>
           ) : (
