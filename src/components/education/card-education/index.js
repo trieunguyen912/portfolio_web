@@ -28,7 +28,7 @@ export const CardEducation = ({ data }) => {
           style={{ objectFit: "cover", borderRadius: 999 }}
         />
       </Grid>
-      <Grid item xs={10} sm={5}>
+      <Grid item xs={10} sm={4.5}>
         {" "}
         <Box className={styles.titleName}>{data?.name}</Box>
         <Grid className={styles.nameInfo}>{data?.info}</Grid>

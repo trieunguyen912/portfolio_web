@@ -13,9 +13,9 @@ const TitlePage = ({ title, content, border }) => {
       xs={12}
     >
       <Grid className={styles.wrapText}>
-        <Typography className={styles.title} sx={{ mb: { xs: 1, sm: 3 } }}>
+        <Box className={styles.title} sx={{ mb: { xs: 1, sm: 3 } }}>
           {title}
-        </Typography>
+        </Box>
 
         <Box
           className={styles.title}
