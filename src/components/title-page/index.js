@@ -28,12 +28,12 @@ const TitlePage = ({ title, content, border }) => {
       </Grid>
       <Grid mt={2}>
         {!border && (
-          <Box className={styles.containerContent}>
+          <Typography className={styles.containerContent}>
             Bringing modern technologies into the real world is my{" "}
             <Typography component={"span"} className={styles.contentSpan}>
               DNA.
             </Typography>
-          </Box>
+          </Typography>
         )}
         <Box className={styles.childernContent}>{content}</Box>
       </Grid>
