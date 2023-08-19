@@ -1,0 +1,75 @@
+const dataCard = [
+  {
+    img_logo: "img_logo_ipek.png",
+    title_other: null,
+    content: "Online B2B Marketplace with social automation possibilities.",
+    text_btn: "Explore Now",
+    dataIcon: [
+      { img: "/image/img_icon_logo_aws.png" },
+      { img: "/image/img_icon_logo_aws_ec2.png" },
+      { img: "/image/img_icon_logo_aws_lambda.png" },
+      { img: "/image/img_icon_logo_aws_s3.png" },
+      { img: "/image/img_icon_logo_chrome.png" },
+      { img: "/image/img_icon_logo_react.png" },
+      { img: "/image/img_icon_logo_telegram.png" },
+      { img: "/image/img_icon_logo_webpack.png" },
+      { img: "/image/img_icon_logo_woocommerce_icon.png" },
+    ],
+    img_card: "img_card_ipek.png",
+  },
+  {
+    img_logo: "img_logo_optochkla.png",
+    title_other: null,
+    content: "Online B2B Marketplace with social automation possibilities.",
+    text_btn: "Coming Soon",
+    dataIcon: [
+      { img: "/image/img_icon_logo_aws.png" },
+      { img: "/image/img_icon_logo_aws_s3.png" },
+      { img: "/image/img_icon_logo_react.png" },
+      { img: "/image/img_icon_logo_webpack.png" },
+    ],
+    img_card: "img_card_optochkla.png",
+  },
+  {
+    img_logo: "img_logo_arena.png",
+    title_other: null,
+    content:
+      "PUBG Arena, is an online match ticket selling application for orgonizing cyber matches, spesifically for PUBG Mobile.",
+    text_btn: "Explore Case Study",
+    dataIcon: [
+      { img: "/image/img_icon_logo_python.png" },
+      { img: "/image/img_icon_logo_django.png" },
+      { img: "/image/img_icon_logo_dart.png" },
+      { img: "/image/img_icon_logo_flutter.png" },
+      { img: "/image/img_icon_logo_react.png" },
+      { img: "/image/img_icon_logo_figma.png" },
+      { img: "/image/img_icon_logo_apple_app_store.png" },
+      { img: "/image/img_icon_logo_google_play_icon.png" },
+    ],
+    img_card: "img_card_arena.png",
+  },
+  {
+    img_logo: "img_logo_leader.png",
+    title_other: null,
+    content:
+      "Leader Finance is an Uzbek finance company, we have redesigned and fixed their technocal problems.",
+    text_btn: "Explore Case Study",
+    dataIcon: [
+      { img: "/image/img_icon_logo_figma.png" },
+      { img: "/image/img_icon_logo_wordpress.png" },
+      { img: "/image/img_icon_logo_elementor.png" },
+      { img: "/image/img_icon_logo_seo.png" },
+      { img: "/image/img_icon_logo_fluent_bug.png" },
+    ],
+    img_card: "img_card_leader.png",
+  },
+  {
+    img_logo: "",
+    title_other: "Other cases",
+    content: "Explore more about other case studies and projects I have done!",
+    text_btn: "All Case Studies",
+    dataIcon: [],
+    img_card: "img_card_other.png",
+  },
+];
+export default dataCard;

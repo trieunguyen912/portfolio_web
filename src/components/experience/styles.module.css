@@ -1,0 +1,56 @@
+.titlePage {
+  margin-bottom: 6rem;
+}
+.contentSpan {
+  color: #fff;
+
+  font-family: Sora;
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.containerContent {
+  background: var(
+    --gradient,
+    linear-gradient(117deg, #00a3ff 22.4%, #00fff0 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Sora;
+  font-size: 2.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.contentDay {
+  color: rgba(255, 255, 255, 0.5);
+
+  font-family: Sora;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.titleContent {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.content {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (max-width: 700px) {
+  .titlePage {
+    margin-bottom: 2rem;
+  }
+}

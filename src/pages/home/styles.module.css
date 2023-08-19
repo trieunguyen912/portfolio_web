@@ -1,0 +1,19 @@
+.wrapHeading {
+  margin: 7.75rem 4rem 0 4rem;
+}
+
+.wrapContent {
+  margin: 10.75rem 4rem 0 4rem;
+}
+.wrapContentBottom {
+  margin: 10.75rem 4rem 31rem 4rem;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapHeading {
+    margin: 2rem 1rem 0 1rem;
+  }
+  .wrapContent {
+    margin: 3rem 1rem 0 1rem;
+  }
+}
