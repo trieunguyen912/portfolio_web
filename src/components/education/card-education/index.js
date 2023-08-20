@@ -34,7 +34,7 @@ export const CardEducation = ({ data }) => {
         <Grid className={styles.contentTime}>{data?.time}</Grid>
       </Grid>
 
-      <Grid item xs={10} sm={4} className={styles.childernContent}>
+      <Grid item xs={10} sx={{mb:{xs:4,sm:0}}} sm={4} className={styles.childernContent}>
         {data?.comment}
       </Grid>
       <Grid item xs={10} ml={1} sm={2.5}>

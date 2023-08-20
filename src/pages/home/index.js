@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <Grid container >
       <Grid
-      sx={{mb:{xs:20 ,sm:43}}}
+      sx={{mb:{xs:5 ,sm:18}}}
        className={styles.wrapImage}
       >
         {/*Header*/}
@@ -28,26 +28,26 @@ const Home = () => {
         </Grid>
       </Grid>
       {/*About me*/}
-      <Grid item container sx={{mt:{xs:20 ,sm:43},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 } }}>
+      <Grid item container sx={{mt:{xs:5 ,sm:18},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 } }}>
         <AboutMe />
       </Grid>
       {/*Content card*/}
-      <Grid item container sx={{mt:{xs:20 ,sm:43},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
+      <Grid item container sx={{mt:{xs:5 ,sm:18},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
         <ContentCard />
       </Grid>
       {/*Testimonials*/}
-      <Grid item container sx={{mt:{xs:20 ,sm:43},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
+      <Grid item container sx={{mt:{xs:5 ,sm:18},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
         <Testimonials />
       </Grid>
       {/*Experience*/}
-      <Grid item container sx={{mt:{xs:20 ,sm:43},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
+      <Grid item container sx={{mt:{xs:5 ,sm:18},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
         <Experience />
       </Grid>
       {/*Educatio*/}
-      <Grid item container sx={{mt:{xs:20 ,sm:43},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
+      <Grid item container sx={{mt:{xs:5 ,sm:18},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
         <Education />
       </Grid>
-      <Grid item  container  sx={{mt:{xs:20 ,sm:43} , mb:{xs:20, sm:124}}} >
+      <Grid item  container  sx={{mt:{xs:5 ,sm:18} , mb:{xs:5, sm:124}}} >
         <TitlePage
           title={"Contact me"}
           border={true}

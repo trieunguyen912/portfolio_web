@@ -38,7 +38,7 @@ const AppCard = ({ dataCard }) => {
               style={{ objectFit: "cover" }}
             />
           )}
-          <Grid className={styles.childernContent}>{dataCard?.content}</Grid>
+          <Grid sx={{mb:{xs:0,sm:1},mt:{xs:1,sm:1}}} className={styles.childernContent}>{dataCard?.content}</Grid>
           <Grid
             container
             sx={{

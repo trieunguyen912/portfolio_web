@@ -62,3 +62,16 @@
    
   }
 }
+@media screen and (max-width: 375px) {
+  .titlePage {
+    margin-bottom: 2rem;
+  }
+  .childernContent {
+    font-size: 1rem;
+  }
+  .nameInfo {
+    
+    font-size: 1rem;
+   
+  }
+}
