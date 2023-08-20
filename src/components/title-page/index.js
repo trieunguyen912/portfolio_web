@@ -13,7 +13,7 @@ const TitlePage = ({ title, content, border }) => {
       xs={12}
     >
       <Grid item className={styles.wrapText}>
-        <Box className={styles.title} sx={{ mb: { xs: 1, sm: 3 } }}>
+        <Box className={styles.title} sx={{ mb:  border ? { xs: 1, sm: 3 } : 0 }}>
           {title}
         </Box>
 

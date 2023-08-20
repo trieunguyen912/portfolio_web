@@ -46,7 +46,7 @@ const Home = () => {
       <Grid item container sx={{mt:{xs:5 ,sm:18},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
         <Education />
       </Grid>
-      <Grid item  container  sx={{mt:{xs:5 ,sm:18} , mb:{xs:5, sm:124},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}} >
+      <Grid item  container  sx={{mt:{xs:5 ,sm:18} , mb:{xs:5, sm:14},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}} >
         <TitlePage
           title={"Contact me"}
           border={true}
