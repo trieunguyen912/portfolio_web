@@ -28,7 +28,7 @@ const AppCard = ({ dataCard }) => {
       >
         <Grid item container xs={9} md={8} >
           {dataCard?.title_other != null ? (
-            <Box className={styles.title}>{dataCard?.title_other}</Box>
+            <Grid className={styles.title}>{dataCard?.title_other}</Grid>
           ) : (
             <Image
               className={styles.img}
