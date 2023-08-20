@@ -27,6 +27,7 @@ const AppLogoCompany = () => {
       container
       className={styles.container}
       m={1}
+      sx={{mt:{xs:4, sm:9}}}
       direction="row"
       justifyContent="space-between"
       alignItems="center"
