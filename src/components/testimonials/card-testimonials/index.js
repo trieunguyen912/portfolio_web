@@ -26,7 +26,7 @@ export const CardTestimonials = ({ data }) => {
         <Box className={styles.titleName}>{data?.name}</Box>
         <Grid className={styles.nameInfo}>{data?.info}</Grid>
         <Grid
-          sx={{ minHeight: { xs: 0, sm: 150 } }}
+          sx={{ minHeight: { xs: 0, sm: 150  } }}
           className={styles.childernContent}
         >
           {data?.comment}

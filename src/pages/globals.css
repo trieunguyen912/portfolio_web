@@ -1,24 +1,21 @@
 * {
   box-sizing: border-box;
   padding: 0;
-
+margin:0;
 }
 
 body {
   font-size: 62.5%;
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: Sora;
 }
 
 body {
   background: #0f1525;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   html {
     font-size: 40%;
   }

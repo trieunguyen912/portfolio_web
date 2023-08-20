@@ -15,7 +15,7 @@ export const Education = () => {
         alignItems: "center",
       }}
     >
-      <Grid item xs={8} className={styles.titlePage}>
+      <Grid item xs={12} sm={8} className={styles.titlePage}>
         <TitlePage
           title={"Education"}
           border={true}

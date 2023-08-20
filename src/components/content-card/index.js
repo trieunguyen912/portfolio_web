@@ -15,7 +15,7 @@ const ContentCard = () => {
         alignItems: "center",
       }}
     >
-      <Grid item xs={8}>
+      <Grid item xs={12} sm={8}>
         <TitlePage
           title={"Recent Cases"}
           border={true}
