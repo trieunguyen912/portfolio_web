@@ -28,7 +28,7 @@ const Home = () => {
         </Grid>
       </Grid>
       {/*About me*/}
-      <Grid item container sx={{mt:{xs:5 ,sm:18},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 } }}>
+      <Grid item container sx={{ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 } }}>
         <AboutMe />
       </Grid>
       {/*Content card*/}
