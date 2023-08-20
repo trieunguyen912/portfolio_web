@@ -10,14 +10,10 @@ import TitlePage from "../../components/title-page";
 import { Grid } from "@mui/material";
 const Home = () => {
   return (
-    <Grid container>
+    <Grid container >
       <Grid
+      sx={{mb:{xs:20 ,sm:43}}}
        className={styles.wrapImage}
-        sx={{
-          backgroundImage: `url("/image/img_bg.png")`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
       >
         {/*Header*/}
         <Grid
@@ -32,26 +28,26 @@ const Home = () => {
         </Grid>
       </Grid>
       {/*About me*/}
-      <Grid item container className={styles.wrapContent}>
+      <Grid item container sx={{mt:{xs:20 ,sm:43},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 } }}>
         <AboutMe />
       </Grid>
       {/*Content card*/}
-      <Grid item container className={styles.wrapContent}>
+      <Grid item container sx={{mt:{xs:20 ,sm:43},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
         <ContentCard />
       </Grid>
       {/*Testimonials*/}
-      <Grid item container className={styles.wrapContent}>
+      <Grid item container sx={{mt:{xs:20 ,sm:43},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
         <Testimonials />
       </Grid>
       {/*Experience*/}
-      <Grid item container className={styles.wrapContent}>
+      <Grid item container sx={{mt:{xs:20 ,sm:43},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
         <Experience />
       </Grid>
       {/*Educatio*/}
-      <Grid item container className={styles.wrapContent}>
+      <Grid item container sx={{mt:{xs:20 ,sm:43},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
         <Education />
       </Grid>
-      <Grid item  container className={styles.wrapContentBottom}>
+      <Grid item  container  sx={{mt:{xs:20 ,sm:43} , mb:{xs:20, sm:124}}} >
         <TitlePage
           title={"Contact me"}
           border={true}

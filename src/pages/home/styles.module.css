@@ -8,29 +8,16 @@
   background-size: cover;
           background-position: center;
 }
-.wrapContent {
-  margin: 10.75rem 4rem 0 4rem;
-}
-.wrapContentBottom {
-  margin: 10.75rem 4rem 31rem 4rem;
-}
+
 
 @media screen and (max-width: 800px) {
   .wrapHeading {
     margin: 2rem 1rem 0 1rem;
   }
-  .wrapContent {
-    margin: 3rem 1rem 0 1rem;
-  }
+  
 }
 @media screen and (max-width: 375px) {
   .wrapHeading {
     margin: 2rem 1rem 0 1rem;
-  }
-  .wrapContent {
-    margin: 3rem 1rem 0 1rem;
-  }
-  .wrapContentBottom {
-    margin: 10.75rem 0 31rem 0;
   }
 }
