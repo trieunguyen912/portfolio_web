@@ -12,7 +12,6 @@ const Home = () => {
   return (
     <Grid container >
       <Grid
-      sx={{mb:{xs:5 ,sm:18}}}
        className={styles.wrapImage}
       >
         {/*Header*/}
