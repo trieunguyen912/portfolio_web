@@ -29,7 +29,7 @@ const Experience = ({ name, year }) => {
         xs={12}
         
         className={styles.titlePage}
-        sx={{m:{xs:2,sm:0},
+        sx={{m:{xs:2,sm:5},
           direction: "column",
           justifyContent: "start",
           alignItems: "center",

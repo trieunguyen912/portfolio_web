@@ -1,5 +1,4 @@
 .btnDark {
-  padding: 1.5rem 1.5rem;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
@@ -18,7 +17,6 @@
 }
 
 .btn {
-  padding: 0.5rem 1.5rem;
   justify-content: center;
   align-items: center;
   background-color: #0b8dcd;
@@ -34,22 +32,18 @@
 
 @media screen and (max-width: 1200px) {
   .btnDark {
-    padding: 0.8rem 1.5rem;
     font-size: 0.8rem;
   }
   .btn {
-    padding: 0.5rem 1rem;
     font-size: 0.8rem;
   }
   
 }
 @media screen and (max-width: 1024px) {
   .btnDark {
-    padding: 0.8rem 1.5rem;
     font-size: 0.6rem;
   }
   .btn {
-    padding: 0.5rem 1rem;
     font-size: 0.6rem;
   }
   
