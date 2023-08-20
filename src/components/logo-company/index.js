@@ -24,9 +24,9 @@ const AppLogoCompany = () => {
   return (
     <Grid
       item
-      ml={2}
-      mr={2}
       container
+      className={styles.container}
+      m={1}
       direction="row"
       justifyContent="space-between"
       alignItems="center"
@@ -39,7 +39,7 @@ const AppLogoCompany = () => {
               src={`${e.img}`}
               alt="logo"
               layout="fill"
-              style={{ objectFit: "contain" }}
+              style={{ objectFit: "cover" }}
             />
           </Grid>
         );

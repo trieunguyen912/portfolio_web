@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 import AppButton from "../button/index";
+import AppLogoCompany from "../logo-company";
 import { Grid, Box } from "@mui/material";
 const AppHeading = ({ name, year }) => {
   return (
@@ -13,14 +14,14 @@ const AppHeading = ({ name, year }) => {
       alignItems="center"
       sx={{ textAlign: "center" }}
     >
-      <Grid className={styles.wrapText}>
-        <Grid className={styles.name}>Hi, my name is</Grid>
+      <Grid item className={styles.wrapText}>
+        <Grid  item className={styles.name}>Hi, my name is</Grid>
         <Box className={styles.title}>
           {name}
           <br />I am a Software Engineer
         </Box>
       </Grid>
-      <Grid>
+      <Grid item >
         <Box className={styles.containerContent}>
           {year}+ years of making the job done in the{" "}
           <Box component={"span"} className={styles.contentSpan}>
@@ -34,6 +35,7 @@ const AppHeading = ({ name, year }) => {
       </Grid>
 
       <AppButton text={"🚀 Lets Get Started!"} />
+      <AppLogoCompany />
     </Grid>
   );
 };

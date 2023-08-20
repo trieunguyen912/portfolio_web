@@ -14,7 +14,7 @@ const AppButtonIcon = ({ text, btnDark }) => {
         }
         sx={{ border: btnDark ? 1 : 0 }}
       >
-        <Typography  className={btnDark ? styles.textDark : styles.text} > {text} </Typography>
+       {text}
        
       </Button>
     </Grid>

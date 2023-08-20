@@ -26,7 +26,7 @@ const AppCard = ({ dataCard }) => {
           alignItems: "center",
         }}
       >
-        <Grid item xs={7}>
+        <Grid item container xs={9} md={8} >
           {dataCard?.title_other != null ? (
             <Box className={styles.title}>{dataCard?.title_other}</Box>
           ) : (
@@ -38,19 +38,19 @@ const AppCard = ({ dataCard }) => {
               style={{ objectFit: "cover" }}
             />
           )}
-          <Box className={styles.childernContent}>{dataCard?.content}</Box>
+          <Grid className={styles.childernContent}>{dataCard?.content}</Grid>
           <Grid
             container
             sx={{
               direction: "row",
               justifyContent: "flex-start",
               alignItems: "center",
-              mb: { xs: 0, sm: 3 },
+              mb: { xs: 0, lg: 3 },
             }}
           >
             {dataCard?.dataIcon?.map((e, index) => {
               return (
-                <Grid key={index} item xs={1} m={0.5}>
+                <Grid key={index} item xs={0.8} sm={1} sx={{m:{xs:0,sm:0.5}}}>
                   <Image
                     className={styles.img}
                     src={`${e.img}`}
@@ -62,7 +62,9 @@ const AppCard = ({ dataCard }) => {
               );
             })}
           </Grid>
+          
           <AppButtonIcon text={dataCard.text_btn} btnDark={true} />
+         
         </Grid>
       </Grid>
       <Grid item xs={6}>

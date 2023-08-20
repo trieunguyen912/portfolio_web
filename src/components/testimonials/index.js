@@ -15,7 +15,7 @@ export const Testimonials = () => {
         alignItems: "center",
       }}
     >
-      <Grid item xs={8} className={styles.titlePage}>
+      <Grid item xs={12} sm={8} className={styles.titlePage}>
         <TitlePage
           title={"Testimonials"}
           border={true}
@@ -36,7 +36,7 @@ export const Testimonials = () => {
       >
         {dataTestimonials?.map((e, index) => {
           return (
-            <Grid key={index} item container m={2} xs={10} sm={4.5}>
+            <Grid key={index} item container m={2} xs={10} sm={5.5}>
               <CardTestimonials data={e} />
             </Grid>
           );

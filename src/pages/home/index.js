@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./styles.module.css";
 import AppHeading from "../../components/heading-tile";
 import AboutMe from "../../components/about-me";
-import AppLogoCompany from "../../components/logo-company";
 import ContentCard from "../../components/content-card";
 import { Testimonials } from "../../components/testimonials";
 import { Education } from "../../components/education";
@@ -13,8 +12,7 @@ const Home = () => {
   return (
     <Grid container>
       <Grid
-        item
-        container
+       className={styles.wrapImage}
         sx={{
           backgroundImage: `url("/image/img_bg.png")`,
           backgroundSize: "cover",
@@ -23,7 +21,7 @@ const Home = () => {
       >
         {/*Header*/}
         <Grid
-          item
+        item
           container
           className={styles.wrapHeading}
           direction="column"
@@ -31,7 +29,6 @@ const Home = () => {
           alignItems="center"
         >
           <AppHeading name={"Nguyen Minh Trieu"} year={"2"} />
-          <AppLogoCompany />
         </Grid>
       </Grid>
       {/*About me*/}
@@ -54,7 +51,7 @@ const Home = () => {
       <Grid item container className={styles.wrapContent}>
         <Education />
       </Grid>
-      <Grid item container className={styles.wrapContentBottom}>
+      <Grid item  container className={styles.wrapContentBottom}>
         <TitlePage
           title={"Contact me"}
           border={true}

@@ -3,11 +3,11 @@
 }
 
 .title {
-  font-family: Sora;
+ 
   font-size: 4.5rem;
-  font-style: normal;
+ 
   font-weight: 700;
-  line-height: normal;
+  
   background: var(
     --gradient,
     linear-gradient(117deg, #00a3ff 22.4%, #00fff0 100%)
@@ -21,21 +21,21 @@
 .childernContent {
   margin-bottom: 2.625rem;
   color: #fff;
-  font-family: Sora;
+ 
   font-size: 1.75rem;
-  font-style: normal;
+ 
   font-weight: 400;
-  line-height: normal;
+  
 }
 
 .containerContent {
   color: #fff;
 
-  font-family: Sora;
+ 
   font-size: 1.75rem;
-  font-style: normal;
+ 
   font-weight: 400;
-  line-height: normal;
+  
 }
 .contentSpan {
   background: var(
@@ -45,9 +45,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Sora;
+ 
   font-size: 1.75rem;
-  font-style: normal;
+ 
   font-weight: 700;
-  line-height: normal;
+  
 }

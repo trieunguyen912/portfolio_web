@@ -6,31 +6,23 @@
   background: #060c1d;
   padding: 2.625rem;
 }
-.img {
-  object-fit: cover;
-  width: 100% !important;
-  position: relative !important;
-  height: unset !important;
-  height: 100%;
-}
+
 .nameInfo {
   margin-bottom: 1.2rem;
   color: rgba(255, 255, 255, 0.84);
   font-family: Poppins;
   font-size: 0.8rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 2.88px;
   text-transform: uppercase;
 }
 .titleName {
   margin-bottom: 1.2rem;
-  font-family: Sora;
+ 
   font-size: 1.5rem;
-  font-style: normal;
+ 
   font-weight: 700;
-  line-height: normal;
+  
   background: var(
     --gradient,
     linear-gradient(117deg, #00a3ff 22.4%, #00fff0 100%)
@@ -41,25 +33,32 @@
 }
 
 .childernContent {
-  margin: 0 0.5rem 1.2rem 0.5rem;
   color: #fff;
-  font-family: Sora;
-  font-size: 1rem;
-  font-style: normal;
+ 
+  font-size: 0.8rem;
+ 
   font-weight: 400;
-  line-height: normal;
+  
 }
 .contentTime {
   color: rgba(255, 255, 255, 0.5);
 
-  font-family: Sora;
+ 
   font-size: 0.8rem;
-  font-style: normal;
+ 
   font-weight: 400;
-  line-height: normal;
+  
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
   .titlePage {
     margin-bottom: 2rem;
+  }
+  .childernContent {
+    font-size: 0.6rem;
+  }
+  .nameInfo {
+    
+    font-size: 0.5rem;
+   
   }
 }

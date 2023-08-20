@@ -12,7 +12,7 @@ const TitlePage = ({ title, content, border }) => {
       sx={{ textAlign: border ? "center" : "start" }}
       xs={12}
     >
-      <Grid className={styles.wrapText}>
+      <Grid item className={styles.wrapText}>
         <Box className={styles.title} sx={{ mb: { xs: 1, sm: 3 } }}>
           {title}
         </Box>
@@ -26,7 +26,7 @@ const TitlePage = ({ title, content, border }) => {
           }}
         ></Box>
       </Grid>
-      <Grid mt={2}>
+      <Grid item mt={2}>
         {!border && (
           <Typography className={styles.containerContent}>
             Bringing modern technologies into the real world is my{" "}

@@ -1,7 +1,10 @@
 .img {
-  object-fit: contain;
+  object-fit: cover;
   width: 100% !important;
   position: relative !important;
   height: unset !important;
-  height: 85;
+  height: 100%;
+}
+.container{
+  margin-top: 10.75rem;
 }

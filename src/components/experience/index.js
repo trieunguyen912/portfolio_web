@@ -14,7 +14,7 @@ const Experience = ({ name, year }) => {
         alignItems: "center",
       }}
     >
-      <Grid item xs={8} className={styles.titlePage}>
+      <Grid item xs={12} sm={8} className={styles.titlePage}>
         <TitlePage
           title={"Recent Experience"}
           border={true}
@@ -27,14 +27,16 @@ const Experience = ({ name, year }) => {
         item
         container
         xs={12}
+        
         className={styles.titlePage}
-        sx={{
+        sx={{m:{xs:2,sm:0},
           direction: "column",
           justifyContent: "start",
           alignItems: "center",
         }}
       >
         <Grid
+        item
           container
           sx={{
             direction: "row",
@@ -47,10 +49,10 @@ const Experience = ({ name, year }) => {
           </Box>
           <Box className={styles.contentSpan}>Molly’s Marketplace</Box>
         </Grid>
-        <Grid className={styles.contentDay}>
+        <Grid item className={styles.contentDay}>
           May 2022 – Aug 2022 (4 Months)
         </Grid>
-        <Grid className={styles.titleContent}>
+        <Grid item className={styles.titleContent}>
           👨‍💻 Technical background :
           <Box className={styles.content}>
             • Developed Chrome Extension using ReactJS/Webpack for Insider Web
@@ -70,7 +72,7 @@ const Experience = ({ name, year }) => {
             and set up Sprint plans and goals.
           </Box>
         </Grid>
-        <Grid className={styles.titleContent}>
+        <Grid item className={styles.titleContent}>
           👨‍💼 Business:
           <Box className={styles.content}>
             • Hiring Developers as well as Interviewing them if they fit the

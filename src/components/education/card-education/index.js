@@ -17,9 +17,8 @@ export const CardEducation = ({ data }) => {
         borderRadius: 3,
         direction: { xs: "column", sm: "row" },
       }}
-      spacing={1}
     >
-      <Grid item xs={10} sm={1}>
+      <Grid item xs={10} sm={1.5}>
         <Image
           src={`/image/${data?.img_avatar}`}
           alt="logo"
@@ -28,17 +27,17 @@ export const CardEducation = ({ data }) => {
           style={{ objectFit: "cover", borderRadius: 999 }}
         />
       </Grid>
-      <Grid item xs={10} sm={4.5}>
+      <Grid item xs={10} sm={3.7}>
         {" "}
         <Box className={styles.titleName}>{data?.name}</Box>
         <Grid className={styles.nameInfo}>{data?.info}</Grid>
         <Grid className={styles.contentTime}>{data?.time}</Grid>
       </Grid>
 
-      <Grid item xs={10} sm={5} className={styles.childernContent}>
+      <Grid item xs={10} sm={4} className={styles.childernContent}>
         {data?.comment}
       </Grid>
-      <Grid item xs={10} sm={1.8}>
+      <Grid item xs={10} ml={1} sm={2.5}>
         <AppButtonIcon btnDark={false} text={data?.text_bnt} />
       </Grid>
     </Grid>
