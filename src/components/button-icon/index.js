@@ -12,7 +12,7 @@ const AppButtonIcon = ({ text, btnDark }) => {
             sx={{ width: { xs: 12, sm: 20 }, height: { xs: 12, sm: 20 } }}
           />
         }
-        sx={{ border: btnDark ? 1 : 0 ,backgroundColor:  btnDark ? '': '#0b8dcd', p:{xs:0,sm:2} , color: btnDark ? "" : "white"}}
+        sx={{ border: btnDark ? 1 : 0 ,backgroundColor:  btnDark ? '': '#0b8dcd', p:{xs:1,sm:2} , color: btnDark ? "" : "white"}}
       >
        {text}
        
