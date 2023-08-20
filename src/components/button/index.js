@@ -6,7 +6,7 @@ const AppButton = ({ text }) => {
     <Grid>
       <Button
         className={styles.btn}
-        sx={{ borderRadius: "5px", backgroundColor: "#0B8DCD" , color:"white" , p:{xs:2}}}
+        sx={{ borderRadius: "5px", backgroundColor: "#0B8DCD" , color:"white" , p:{xs:0, sm:2}}}
       >
       {text}
        
