@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 export const Education = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 5000 });
   }, []);
   return (
     <Grid

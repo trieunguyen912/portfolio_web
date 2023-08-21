@@ -13,7 +13,7 @@ const TableExperience = ({ dataExperience }) => {
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     setMounted(true);
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 4000 });
   }, []);
   return (
     mounted && (
