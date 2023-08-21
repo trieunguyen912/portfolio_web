@@ -26,7 +26,7 @@ const AppCard = ({ dataCard }) => {
           alignItems: "center",
         }}
       >
-        <Grid item container xs={9} md={8} >
+        <Grid item container xs={9} md={8}>
           {dataCard?.title_other != null ? (
             <Grid className={styles.title}>{dataCard?.title_other}</Grid>
           ) : (
@@ -38,7 +38,12 @@ const AppCard = ({ dataCard }) => {
               style={{ objectFit: "cover" }}
             />
           )}
-          <Grid sx={{mb:{xs:0,sm:1},mt:{xs:0,sm:1}}} className={styles.childernContent}>{dataCard?.content}</Grid>
+          <Grid
+            sx={{ mb: { xs: 0, sm: 1 }, mt: { xs: 0, sm: 1 } }}
+            className={styles.childernContent}
+          >
+            {dataCard?.content}
+          </Grid>
           <Grid
             container
             sx={{
@@ -50,7 +55,13 @@ const AppCard = ({ dataCard }) => {
           >
             {dataCard?.dataIcon?.map((e, index) => {
               return (
-                <Grid key={index} item xs={0.8} sm={1} sx={{m:{xs:0,sm:0.5}}}>
+                <Grid
+                  key={index}
+                  item
+                  xs={0.8}
+                  sm={1}
+                  sx={{ m: { xs: 0, sm: 0.5 } }}
+                >
                   <Image
                     className={styles.img}
                     src={`${e.img}`}
@@ -62,9 +73,8 @@ const AppCard = ({ dataCard }) => {
               );
             })}
           </Grid>
-          
-          <AppButtonIcon text={dataCard.text_btn} btnDark={true} />
-         
+
+          <AppButtonIcon text={dataCard.text_btn} />
         </Grid>
       </Grid>
       <Grid item xs={6}>

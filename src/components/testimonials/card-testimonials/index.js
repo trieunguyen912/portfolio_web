@@ -1,5 +1,5 @@
 import React from "react";
-import AppButtonIcon from "../../button-icon";
+import AppButton from "../../button";
 import { Grid, Box } from "@mui/material";
 import Image from "next/image";
 import styles from "../styles.module.css";
@@ -26,13 +26,13 @@ export const CardTestimonials = ({ data }) => {
         <Box className={styles.titleName}>{data?.name}</Box>
         <Grid className={styles.nameInfo}>{data?.info}</Grid>
         <Grid
-          sx={{ minHeight: { xs: 0, sm: 150  } }}
+          sx={{ minHeight: { xs: 0, sm: 0, md: 150 } }}
           className={styles.childernContent}
         >
           {data?.comment}
         </Grid>
         <Grid>
-          <AppButtonIcon btnDark={false} text={data?.text_bnt} />
+          <AppButton icon={true} text={data?.text_bnt} />
         </Grid>
       </Grid>
     </Grid>

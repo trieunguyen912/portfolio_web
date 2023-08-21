@@ -15,13 +15,15 @@ const AppHeading = ({ name, year }) => {
       sx={{ textAlign: "center" }}
     >
       <Grid item className={styles.wrapText}>
-        <Grid  item className={styles.name}>Hi, my name is</Grid>
+        <Grid item className={styles.name}>
+          Hi, my name is
+        </Grid>
         <Box className={styles.title}>
           {name}
           <br />I am a Software Engineer
         </Box>
       </Grid>
-      <Grid item >
+      <Grid item>
         <Box className={styles.containerContent}>
           {year}+ years of making the job done in the{" "}
           <Box component={"span"} className={styles.contentSpan}>
@@ -34,7 +36,7 @@ const AppHeading = ({ name, year }) => {
         </Box>
       </Grid>
 
-      <AppButton text={"🚀 Lets Get Started!"} />
+      <AppButton icon={false} text={"🚀 Lets Get Started!"} />
       <AppLogoCompany />
     </Grid>
   );

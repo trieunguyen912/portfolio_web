@@ -1,5 +1,5 @@
 import React from "react";
-import AppButtonIcon from "../../button-icon";
+import AppButton from "../../button";
 import { Grid, Box } from "@mui/material";
 import Image from "next/image";
 import styles from "../styles.module.css";
@@ -10,15 +10,15 @@ export const CardEducation = ({ data }) => {
       item
       className={styles.containerCard}
       container
-      justifyContent="center"
+      justifyContent="space-between"
       alignItems="center"
       sx={{
-        textAlign: { xs: "center", sm: "start" },
+        textAlign: { xs: "center", md: "start" },
         borderRadius: 3,
-        direction: { xs: "column", sm: "row" },
+        direction: { xs: "column", md: "row" },
       }}
     >
-      <Grid item xs={10} sm={1.5}>
+      <Grid item xs={12} md={1.2}>
         <Image
           src={`/image/${data?.img_avatar}`}
           alt="logo"
@@ -27,18 +27,24 @@ export const CardEducation = ({ data }) => {
           style={{ objectFit: "cover", borderRadius: 999 }}
         />
       </Grid>
-      <Grid item xs={10} sm={3.7}>
+      <Grid item xs={12} md={2.5}>
         {" "}
         <Box className={styles.titleName}>{data?.name}</Box>
         <Grid className={styles.nameInfo}>{data?.info}</Grid>
         <Grid className={styles.contentTime}>{data?.time}</Grid>
       </Grid>
 
-      <Grid item xs={10} sx={{mb:{xs:4,sm:0}}} sm={4} className={styles.childernContent}>
+      <Grid
+        item
+        xs={12}
+        sx={{ mb: { xs: 4, md: 0 } }}
+        md={5}
+        className={styles.childernContent}
+      >
         {data?.comment}
       </Grid>
-      <Grid item xs={10} ml={1} sm={2.5}>
-        <AppButtonIcon btnDark={false} text={data?.text_bnt} />
+      <Grid item xs={12} ml={1} md={2}>
+        <AppButton icon={true} text={data?.text_bnt} />
       </Grid>
     </Grid>
   );

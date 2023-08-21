@@ -2,7 +2,41 @@
   border-radius: 1.5rem;
   object-fit: cover;
   width: 100% !important;
-  position: relative !important;
-  height: unset !important;
-  height: 85;
+  position: absolute !important;
+  height: 32.625rem !important;
+}
+.wrapImg {
+  position: relative;
+  height: 100% !important;
+  width: 100% !important;
+}
+.container {
+}
+
+@media screen and (max-width: 375px) {
+  .img {
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+    height: 85;
+  }
+  .wrapImg {
+    position: "relative";
+    height: unset !important;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img {
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+    height: 85;
+  }
+  .wrapImg {
+    position: "relative";
+    height: unset !important;
+    width: 100% !important;
+  }
 }

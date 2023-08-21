@@ -12,8 +12,11 @@ const TitlePage = ({ title, content, border }) => {
       sx={{ textAlign: border ? "center" : "start" }}
       xs={12}
     >
-      <Grid item className={styles.wrapText}>
-        <Box className={styles.title} sx={{ mb:  border ? { xs: 1, sm: 3 } : 0 }}>
+      <Grid item>
+        <Box
+          className={styles.title}
+          sx={{ mb: border ? { xs: 1, sm: 3 } : 0 }}
+        >
           {title}
         </Box>
 

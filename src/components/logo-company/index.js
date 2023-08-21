@@ -19,6 +19,9 @@ const dataIcon = [
   {
     img: "/image/img_5.png",
   },
+  {
+    img: "/image/img_6.png",
+  },
 ];
 const AppLogoCompany = () => {
   return (
@@ -26,15 +29,14 @@ const AppLogoCompany = () => {
       item
       container
       className={styles.container}
-      m={1}
-      sx={{mt:{xs:4, sm:9}}}
+      sx={{ mt: { xs: 4, sm: 9 } }}
       direction="row"
       justifyContent="space-between"
       alignItems="center"
     >
       {dataIcon.map((e, index) => {
         return (
-          <Grid item key={index} xs={2}>
+          <Grid item key={index} xs={1.5}>
             <Image
               className={styles.img}
               src={`${e.img}`}

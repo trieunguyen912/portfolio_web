@@ -12,39 +12,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
-.btn {
-  justify-content: center;
-  align-items: center;
-  background-color: #0b8dcd;
-  gap: 1.5rem;
-  box-shadow:
-    0rem 0.4rem 2.4rem 0rem rgba(75, 126, 255, 0.6),
-    0.4rem 0rem 2.4rem 0rem rgba(75, 126, 255, 0.24);
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #fff;
-}
-
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   .btnDark {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
-  .btn {
-    font-size: 0.8rem;
-  }
-  
-}
-@media screen and (max-width: 1024px) {
-  .btnDark {
-    font-size: 0.6rem;
-  }
-  .btn {
-    font-size: 0.6rem;
-  }
-  
 }

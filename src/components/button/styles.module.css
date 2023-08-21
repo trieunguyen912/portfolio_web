@@ -7,20 +7,37 @@
     0.4rem 0rem 2.4rem 0rem rgba(75, 126, 255, 0.24);
   color: #fff;
   text-align: center;
-  font-size: 1.2rem;
- 
+  font-size: 1rem;
+
   font-weight: 700;
-  
 }
 
+.btnIcon {
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow:
+    0rem 0.4rem 2.4rem 0rem rgba(75, 126, 255, 0.6),
+    0.4rem 0rem 2.4rem 0rem rgba(75, 126, 255, 0.24);
+  color: #fff;
+  text-align: center;
+  font-size: 0.6rem;
+
+  font-weight: 700;
+}
 @media screen and (max-width: 1200px) {
   .btn {
     font-size: 0.8rem;
   }
+  .btnIcon {
+    font-size: 0.4rem;
+  }
 }
-
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .btn {
-    font-size: 0.6rem;
+    font-size: 1rem;
+  }
+  .btnIcon {
+    font-size: 1rem;
   }
 }
