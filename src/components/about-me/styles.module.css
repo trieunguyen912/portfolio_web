@@ -1,9 +1,13 @@
 .img {
+  opacity: 0;
   border-radius: 1.5rem;
   object-fit: cover;
   width: 100% !important;
   position: absolute !important;
   height: 32.625rem !important;
+}
+.textContainer {
+  opacity: 0;
 }
 .wrapImg {
   position: relative;

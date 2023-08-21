@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./styles.module.css";
 import { Grid, Box } from "@mui/material";
 import TitlePage from "../title-page";
 import { CardEducation } from "./card-education";
 import dataEducation from "../../data/dataEducation";
+import "aos/dist/aos.css";
+import Aos from "aos";
 export const Education = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <Grid
       item
@@ -36,7 +41,7 @@ export const Education = () => {
       >
         {dataEducation?.map((e, index) => {
           return (
-            <Grid key={index} item container m={2} xs={12}>
+            <Grid key={index} item container m={2} xs={12} data-aos="fade-up">
               <CardEducation data={e} />
             </Grid>
           );

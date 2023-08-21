@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./styles.module.css";
 import AppButtonIcon from "../button-icon";
 import { Grid, Box } from "@mui/material";
 import Image from "next/image";
+
 const AppCard = ({ dataCard }) => {
   return (
     <Grid

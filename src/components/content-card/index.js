@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./styles.module.css";
 import { Grid, Box } from "@mui/material";
 import TitlePage from "../title-page";
 import AppCard from "../card";
 import dataCard from "../../data/dataListIcon";
+import "aos/dist/aos.css";
+import Aos from "aos";
 const ContentCard = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <Grid
       item
@@ -27,7 +32,11 @@ const ContentCard = () => {
       <Grid item xs={12}>
         {dataCard.map((e, index) => {
           return (
-            <Grid key={index} className={styles.wrapListCard}>
+            <Grid
+              key={index}
+              className={styles.wrapListCard}
+              data-aos="zoom-in"
+            >
               <AppCard dataCard={e} />
             </Grid>
           );

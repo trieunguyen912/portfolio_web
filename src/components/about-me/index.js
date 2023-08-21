@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import AppButton from "../button";
 import TitlePage from "../title-page";
 import Image from "next/image";
 import { Grid, Box } from "@mui/material";
 import styles from "./styles.module.css";
+import { TweenMax, Power3 } from "gsap";
 const AboutMe = () => {
+  let { imgItem, textItem } = useRef(null);
+  useEffect(() => {
+    TweenMax.to(imgItem, 0.8, {
+      opacity: 1,
+      y: -30,
+      ease: Power3.easeOut,
+      delay: 5,
+    });
+    TweenMax.to(textItem, 0.8, {
+      opacity: 1,
+      x: -40,
+      ease: Power3.easeOut,
+      delay: 6,
+    });
+  }, []);
   return (
     <Grid
       item
@@ -24,14 +40,26 @@ const AboutMe = () => {
         sx={{ mr: { xs: 4, md: 8 } }}
       >
         <Image
+          ref={(el) => {
+            imgItem = el;
+          }}
           className={styles.img}
           src={"/image/avatar.png"}
           alt="logo"
           layout="fill"
-          style={{ objectFit: "cover", top: "-25%" }}
+          style={{ objectFit: "cover", top: "-20%" }}
         />
       </Grid>
-      <Grid item xs={10} sm={6} container>
+      <Grid
+        className={styles.textContainer}
+        ref={(el) => {
+          textItem = el;
+        }}
+        item
+        xs={10}
+        sm={6}
+        container
+      >
         <Grid
           item
           container

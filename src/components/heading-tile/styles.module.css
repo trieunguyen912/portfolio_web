@@ -1,10 +1,12 @@
 .container {
+  opacity: 0;
   margin: 1.25rem 0 0 0;
 }
 .wrapText {
   margin: 0 2rem 0 2rem;
 }
 .name {
+  opacity: 0;
   color: rgba(255, 255, 255, 0.84);
   font-family: Poppins;
   font-size: 2rem;
@@ -15,6 +17,7 @@
   text-transform: uppercase;
 }
 .title {
+  opacity: 0;
   font-size: 4.5rem;
 
   font-weight: 700;
@@ -29,12 +32,13 @@
 }
 .containerContent {
   color: #fff;
-
+  opacity: 0;
   font-size: 1.75rem;
 
   font-weight: 700;
 }
 .contentSpan {
+  opacity: 0;
   background: var(
     --gradient,
     linear-gradient(117deg, #00a3ff 22.4%, #00fff0 100%)
@@ -50,7 +54,7 @@
 .childernContent {
   margin-bottom: 2.625rem;
   color: #fff;
-
+  opacity: 0;
   font-size: 1.625rem;
 
   font-weight: 400;
