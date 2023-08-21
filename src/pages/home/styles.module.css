@@ -10,11 +10,11 @@
 
 @media screen and (max-width: 800px) {
   .wrapHeading {
-    padding: 2rem 1rem 0 1rem;
+    margin: 2rem 1rem 0 1rem;
   }
 }
 @media screen and (max-width: 375px) {
   .wrapHeading {
-    padding: 2rem 1rem 0 1rem;
+    margin: 2rem 1rem 0 1rem;
   }
 }

@@ -27,6 +27,8 @@ const AboutMe = () => {
       container
       className={styles.container}
       sx={{
+        mr:{xs:4,md:0},
+        ml:{xs:4,md:0},
         direction: { xs: "column", lg: "row" },
         justifyContent: "center",
         alignItems: "center",
@@ -56,20 +58,18 @@ const AboutMe = () => {
           textItem = el;
         }}
         item
-        xs={10}
+        xs={12}
         sm={6}
+        
         container
+        sx={{
+          ml:{xs:10,md:3},
+          direction: {xs: "column"},
+          justifyContent: { xs: "center", md: "start" },
+          alignItems: { xs: "center", md: "start" },
+        }}
       >
-        <Grid
-          item
-          container
-          sx={{
-            justifyContent: { xs: "center", sm: "start" },
-            alignItems: { xs: "center", sm: "start" },
-            mt: { xs: 0, sm: 2, md: 3 },
-            mb: { xs: 0, sm: 2, md: 3 },
-          }}
-        >
+      
           <TitlePage
             title={"About Me"}
             border={false}
@@ -78,7 +78,7 @@ const AboutMe = () => {
             }
           />
           <AppButton icon={false} text={"😉 Download My Resume"} />
-        </Grid>
+       
       </Grid>
     </Grid>
   );
