@@ -18,11 +18,11 @@
 }
 .titleName {
   margin-bottom: 1.2rem;
- 
+
   font-size: 1.5rem;
- 
+
   font-weight: 700;
-  
+
   background: var(
     --gradient,
     linear-gradient(117deg, #00a3ff 22.4%, #00fff0 100%)
@@ -34,44 +34,34 @@
 
 .childernContent {
   color: #fff;
- 
+
   font-size: 0.8rem;
- 
+
   font-weight: 400;
-  
 }
 .contentTime {
   color: rgba(255, 255, 255, 0.5);
 
- 
   font-size: 0.8rem;
- 
+
   font-weight: 400;
-  
 }
 @media screen and (max-width: 1200px) {
   .titlePage {
     margin-bottom: 2rem;
   }
-  .childernContent {
-    font-size: 0.6rem;
-  }
-  .nameInfo {
-    
-    font-size: 0.5rem;
-   
+  .containerCard {
+    padding: 1rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 900px) {
   .titlePage {
     margin-bottom: 2rem;
   }
   .childernContent {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .nameInfo {
-    
-    font-size: 1rem;
-   
+    font-size: 2rem;
   }
 }

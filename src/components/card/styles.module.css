@@ -1,6 +1,10 @@
 .container {
   background: #060c1d;
 }
+.imgBorder {
+  height: 2rem;
+  position: absolute !important;
+}
 .img {
   object-fit: cover;
   width: 100% !important;
@@ -12,13 +16,12 @@
   color: #fff;
   font-size: 1rem;
   font-weight: 400;
-  
 }
 .title {
   font-size: 3.5rem;
- 
+
   font-weight: 700;
-  
+
   background: var(
     --gradient,
     linear-gradient(117deg, #00a3ff 22.4%, #00fff0 100%)
@@ -29,7 +32,6 @@
 }
 @media screen and (max-width: 700px) {
   .childernContent {
-    
     font-size: 0.8rem;
   }
 }

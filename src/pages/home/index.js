@@ -10,13 +10,11 @@ import TitlePage from "../../components/title-page";
 import { Grid } from "@mui/material";
 const Home = () => {
   return (
-    <Grid container >
-      <Grid
-       className={styles.wrapImage}
-      >
+    <Grid container>
+      <Grid className={styles.wrapImage}>
         {/*Header*/}
         <Grid
-        item
+          item
           container
           className={styles.wrapHeading}
           direction="column"
@@ -25,28 +23,75 @@ const Home = () => {
         >
           <AppHeading name={"Nguyen Minh Trieu"} year={"2"} />
         </Grid>
+        {/*About me*/}
+        <Grid
+          item
+          container
+          className={styles.wrapAbout}
+          sx={{ mt: { xs: 5, sm: 18 } }}
+        >
+          <AboutMe />
+        </Grid>
       </Grid>
-      {/*About me*/}
-      <Grid item container sx={{ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 } }}>
-        <AboutMe />
-      </Grid>
+
       {/*Content card*/}
-      <Grid item container sx={{mt:{xs:5 ,sm:18},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
+      <Grid
+        item
+        container
+        sx={{
+          mt: { xs: 5, sm: 18 },
+          ml: { xs: 4, sm: 8 },
+          mr: { xs: 4, sm: 8 },
+        }}
+      >
         <ContentCard />
       </Grid>
       {/*Testimonials*/}
-      <Grid item container sx={{mt:{xs:5 ,sm:18},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
+      <Grid
+        item
+        container
+        sx={{
+          mt: { xs: 5, sm: 18 },
+          ml: { xs: 4, sm: 8 },
+          mr: { xs: 4, sm: 8 },
+        }}
+      >
         <Testimonials />
       </Grid>
       {/*Experience*/}
-      <Grid item container sx={{mt:{xs:5 ,sm:18},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
+      <Grid
+        item
+        container
+        sx={{
+          mt: { xs: 5, sm: 18 },
+          ml: { xs: 4, sm: 8 },
+          mr: { xs: 4, sm: 8 },
+        }}
+      >
         <Experience />
       </Grid>
-      {/*Educatio*/}
-      <Grid item container sx={{mt:{xs:5 ,sm:18},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}}>
+      {/*Education*/}
+      <Grid
+        item
+        container
+        sx={{
+          mt: { xs: 5, sm: 18 },
+          ml: { xs: 4, sm: 8 },
+          mr: { xs: 4, sm: 8 },
+        }}
+      >
         <Education />
       </Grid>
-      <Grid item  container  sx={{mt:{xs:5 ,sm:18} , mb:{xs:5, sm:14},ml:{xs:4 ,sm:16 },mr:{xs:4 ,sm:16 }}} >
+      <Grid
+        item
+        container
+        sx={{
+          mt: { xs: 5, sm: 18 },
+          mb: { xs: 5, sm: 14 },
+          ml: { xs: 4, sm: 8 },
+          mr: { xs: 4, sm: 8 },
+        }}
+      >
         <TitlePage
           title={"Contact me"}
           border={true}

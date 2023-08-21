@@ -1,13 +1,8 @@
-.wrapText {
-  margin: 0 2rem 0 2rem;
-}
-
 .title {
- 
   font-size: 4.5rem;
- 
+
   font-weight: 700;
-  
+
   background: var(
     --gradient,
     linear-gradient(117deg, #00a3ff 22.4%, #00fff0 100%)
@@ -21,21 +16,18 @@
 .childernContent {
   margin-bottom: 2.625rem;
   color: #fff;
- 
+
   font-size: 1.75rem;
- 
+
   font-weight: 400;
-  
 }
 
 .containerContent {
   color: #fff;
 
- 
   font-size: 1.75rem;
- 
+
   font-weight: 400;
-  
 }
 .contentSpan {
   background: var(
@@ -45,9 +37,8 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
- 
+
   font-size: 1.75rem;
- 
+
   font-weight: 700;
-  
 }
