@@ -27,20 +27,14 @@ const AboutMe = () => {
       container
       className={styles.container}
       sx={{
-        mr: { xs: 4, md: 0 },
-        ml: { xs: 4, md: 0 },
+        mr: { xs: 4, md: 8 },
+        ml: { xs: 4, md: 8 },
         direction: { xs: "column", lg: "row" },
-        justifyContent: "center",
+        justifyContent: { xs: "center", lg: "space-between" },
         alignItems: "center",
       }}
     >
-      <Grid
-        item
-        xs={6}
-        className={styles.wrapImg}
-        sm={4}
-        sx={{ mr: { xs: 4, md: 8 } }}
-      >
+      <Grid item xs={6} className={styles.wrapImg} sm={5}>
         <Image
           ref={(el) => {
             imgItem = el;
@@ -48,8 +42,9 @@ const AboutMe = () => {
           className={styles.img}
           src={"/image/avatar.png"}
           alt="logo"
-          layout="fill"
-          style={{ objectFit: "cover", top: "-20%" }}
+          fill
+          sizes=" (max-width: 1700px) 51.2vw, 51.2vh"
+          style={{ objectFit: "cover", top: "-10%" }}
         />
       </Grid>
       <Grid
@@ -62,10 +57,10 @@ const AboutMe = () => {
         sm={6}
         container
         sx={{
-          ml: { xs: 10, md: 3 },
+          ml: { xs: 10, md: 8 },
           direction: { xs: "column" },
           justifyContent: { xs: "center", md: "start" },
-          alignItems: { xs: "center", md: "start" },
+          alignItems: { xs: "center", md: "flex-end" },
         }}
       >
         <TitlePage

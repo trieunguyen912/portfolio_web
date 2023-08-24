@@ -42,3 +42,11 @@
 
   font-weight: 700;
 }
+@media screen and (max-width: 1200px) {
+  .containerContent {
+    font-size: 1.75rem;
+  }
+  .childernContent {
+    font-size: 1.5rem;
+  }
+}

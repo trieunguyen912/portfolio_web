@@ -29,9 +29,9 @@ const TitlePage = ({ title, content, border }) => {
           }}
         ></Box>
       </Grid>
-      <Grid item mt={2}>
+      <Grid item>
         {!border && (
-          <Box className={styles.containerContent}>
+          <Box className={styles.containerContent} sx={{ maxHeight: 70 }}>
             Bringing modern technologies into the real world is my{" "}
             <Box component={"span"} className={styles.contentSpan}>
               DNA.

@@ -5,22 +5,9 @@ import AppLogoCompany from "../logo-company";
 import { Grid, Box } from "@mui/material";
 import { TweenMax, Power3 } from "gsap";
 const AppHeading = ({ name, year }) => {
-  let {
-    container,
-    textName,
-    textChildernContent,
-    textContent,
-    textSpan,
-    textTitle,
-  } = useRef(null);
+  let { textName, textContent, textSpan, textTitle } = useRef(null);
 
   useEffect(() => {
-    TweenMax.to(container, 0.8, {
-      opacity: 1,
-      y: -20,
-      ease: Power3.easeOut,
-      delay: 1,
-    });
     TweenMax.to(textTitle, 0.8, {
       opacity: 1,
       y: -20,
@@ -39,12 +26,6 @@ const AppHeading = ({ name, year }) => {
       ease: Power3.easeOut,
       delay: 5,
     });
-    TweenMax.to(textChildernContent, 0.8, {
-      opacity: 1,
-      y: -20,
-      ease: Power3.easeOut,
-      delay: 3,
-    });
     TweenMax.to(textContent, 0.8, {
       opacity: 1,
       y: -20,
@@ -61,9 +42,6 @@ const AppHeading = ({ name, year }) => {
       justifyContent="center"
       alignItems="center"
       sx={{ textAlign: "center" }}
-      ref={(el) => {
-        container = el;
-      }}
     >
       <Grid item className={styles.wrapText}>
         <Grid
@@ -103,17 +81,11 @@ const AppHeading = ({ name, year }) => {
             Tech industry!
           </Box>
         </Box>
-        <Box
-          ref={(el) => {
-            textChildernContent = el;
-          }}
-          className={styles.childernContent}
-        >
+        <Box className={styles.childernContent}>
           I am a product-oriented Software Engineer with a business mindset{" "}
           <br /> from bringing the latest tech to launching successful startups!
         </Box>
       </Grid>
-
       <AppButton icon={false} text={"🚀 Lets Get Started!"} />
       <AppLogoCompany />
     </Grid>

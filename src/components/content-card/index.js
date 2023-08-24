@@ -8,7 +8,8 @@ import "aos/dist/aos.css";
 import Aos from "aos";
 const ContentCard = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
+    Aos.refresh();
   }, []);
   return (
     <Grid
