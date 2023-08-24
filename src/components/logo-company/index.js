@@ -36,12 +36,14 @@ const AppLogoCompany = () => {
     >
       {dataIcon.map((e, index) => {
         return (
-          <Grid item key={index} xs={1.5}>
+          <Grid item key={index} xs={1.5} sx={{ position: "relative" }}>
             <Image
               className={styles.img}
               src={`${e.img}`}
               alt="logo"
-              layout="fill"
+              fill
+              priority={true}
+              sizes=" (max-width: 1200px) 20vw, 4vh"
               style={{ objectFit: "cover" }}
             />
           </Grid>

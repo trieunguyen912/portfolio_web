@@ -27,7 +27,7 @@ const AppCard = ({ dataCard }) => {
           alignItems: "center",
         }}
       >
-        <Grid item container xs={9} md={8}>
+        <Grid item container xs={9} md={8} sx={{ position: "relative" }}>
           {dataCard?.title_other != null ? (
             <Grid className={styles.title}>{dataCard?.title_other}</Grid>
           ) : (
@@ -35,7 +35,8 @@ const AppCard = ({ dataCard }) => {
               className={styles.img}
               src={`/image/${dataCard?.img_logo}`}
               alt="logo"
-              layout="fill"
+              fill
+              sizes=" (max-width: 1728px) 41.8vw, 9.6vh"
               style={{ objectFit: "cover" }}
             />
           )}
@@ -61,13 +62,14 @@ const AppCard = ({ dataCard }) => {
                   item
                   xs={0.8}
                   sm={1}
-                  sx={{ m: { xs: 0, sm: 0.5 } }}
+                  sx={{ m: { xs: 0, sm: 0.5 }, position: "relative" }}
                 >
                   <Image
                     className={styles.img}
                     src={`${e.img}`}
                     alt="logo"
-                    layout="fill"
+                    fill
+                    sizes=" (max-width: 1728px) 3.2vw, 3.2vh"
                     style={{ objectFit: "cover" }}
                   />
                 </Grid>
@@ -78,12 +80,14 @@ const AppCard = ({ dataCard }) => {
           <AppButtonIcon text={dataCard.text_btn} />
         </Grid>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={6} sx={{ position: "relative" }}>
         <Image
           className={styles.img}
           src={`/image/${dataCard.img_card}`}
           alt="logo"
-          layout="fill"
+          fill
+          priority={true}
+          sizes=" (max-width: 1728px) 100vw, 51.2vh"
           style={{ objectFit: "cover", borderRadius: 20 }}
         />
       </Grid>

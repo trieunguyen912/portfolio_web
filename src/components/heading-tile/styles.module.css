@@ -1,5 +1,4 @@
 .container {
-  opacity: 0;
   margin: 1.25rem 0 0 0;
 }
 .wrapText {
@@ -54,7 +53,6 @@
 .childernContent {
   margin-bottom: 2.625rem;
   color: #fff;
-  opacity: 0;
   font-size: 1.625rem;
 
   font-weight: 400;

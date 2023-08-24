@@ -14,8 +14,8 @@ const AppButton = ({ text, icon }) => {
             backgroundColor: "#0B8DCD",
             pt: { xs: 0.5, sm: 2 },
             pb: { xs: 0.5, sm: 2 },
-            pl: { xs: 1, sm: 2 },
-            pr: { xs: 1, sm: 2 },
+            pl: { xs: 1, sm: 2, md: 5 },
+            pr: { xs: 1, sm: 2, md: 5 },
           }}
         >
           {text}

@@ -3,6 +3,7 @@
   border-radius: 1.5rem;
   object-fit: cover;
   width: 100% !important;
+  max-width: 35rem !important;
   position: absolute !important;
   height: 32.625rem !important;
 }

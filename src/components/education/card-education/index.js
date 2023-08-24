@@ -18,7 +18,7 @@ export const CardEducation = ({ data }) => {
         direction: { xs: "column", md: "row" },
       }}
     >
-      <Grid item xs={12} md={1.2}>
+      <Grid item xs={12} md={1.2} sx={{ position: "relative" }}>
         <Image
           src={`/image/${data?.img_avatar}`}
           alt="logo"
